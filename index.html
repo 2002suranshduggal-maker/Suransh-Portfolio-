@@ -1,11 +1,10 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Suransh Duggal — Portfolio</title>
-<meta name="description" content="Suransh Duggal, Faridabad, Delhi NCR. Merchant promotions at Vaco, school partnerships at KidZania, and two consumer ventures. Open to Associate Category Manager, KAM (Marketplaces) and Growth roles.">
+<title>Suransh Duggal, Portfolio</title>
+<meta name="description" content="Suransh Duggal, Faridabad, Delhi NCR. School and corporate partnerships at KidZania, merchant promotions at Vaco, two consumer ventures, and competitive cricket. Open to Founder's Office, GTM, and Business Growth roles.">
 <meta name="theme-color" content="#F7F5EF">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +28,8 @@
   --green-soft:#2E7555;
   --green-wash:#EAF0E7;
   --green-line:rgba(36,92,67,.26);
+  --rg-purple:#4B2E83;
+  --rg-orange:#E07A22;
   --pad:clamp(1.15rem,4vw,4.5rem);
   --bleed:clamp(4rem,7.5vw,7.5rem);
   --maxw:1280px;
@@ -84,7 +85,7 @@ a{ color:inherit; }
 .brand{ text-decoration:none; margin-right:auto; font-weight:700; font-size:1.02rem;
   letter-spacing:-.03em; }
 .brand span{ color:var(--green-soft); }
-.nav__links{ display:flex; gap:1.5rem; }
+.nav__links{ display:flex; gap:1.35rem; }
 .nav__a{ position:relative; text-decoration:none; font-size:.87rem; font-weight:500; color:var(--soft);
   padding-block:.35rem; transition:color .2s var(--ease); }
 .nav__a::after{ content:""; position:absolute; left:0; right:0; bottom:0; height:1.5px; background:var(--green);
@@ -122,8 +123,8 @@ a{ color:inherit; }
   gap:clamp(1.8rem,4vw,4rem); align-items:end; }
 @media (max-width:980px){ .hero__g{ grid-template-columns:1fr; align-items:start; gap:2.2rem; } }
 .hero__name{ font-size:.78rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase;
-  color:var(--faint); margin:0 0 1.5rem; }
-.hero__sub{ color:var(--soft); max-width:46ch; margin:1.7rem 0 0;
+  color:var(--faint); margin:0 0 1.4rem; }
+.hero__sub{ color:var(--soft); max-width:48ch; margin:1.7rem 0 0;
   font-size:clamp(1.02rem,.98rem + .34vw,1.18rem); }
 .hero__sub strong{ color:var(--ink); font-weight:600; }
 .rolebox{ display:flex; flex-wrap:wrap; align-items:center; gap:.5rem .85rem;
@@ -165,7 +166,28 @@ a{ color:inherit; }
 .bandhead{ margin-bottom:clamp(2.2rem,4vw,3.4rem); }
 .bandhead .lede{ margin-top:1rem; }
 
-/* 02 · About + journey */
+/* 02 · B2B Growth Playbook */
+.rg-wrap{ background:var(--white); border:1px solid var(--rule);
+  border-top:4px solid var(--rg-purple); position:relative;
+  padding:clamp(1.6rem,3.5vw,3rem); box-shadow:var(--lift); }
+.rg-wrap::after{ content:""; position:absolute; top:-4px; right:0; width:42%; height:4px;
+  background:var(--rg-orange); }
+.rg-top{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(1.4rem,3vw,3rem);
+  align-items:end; padding-bottom:1.8rem; border-bottom:1px solid var(--rule); margin-bottom:1.8rem; }
+@media (max-width:860px){ .rg-top{ grid-template-columns:1fr; gap:1rem; } }
+.rg-top p{ margin:0; color:var(--soft); font-size:.97rem; }
+.rg-top strong{ color:var(--ink); font-weight:600; }
+.rg-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }
+@media (max-width:780px){ .rg-grid{ grid-template-columns:1fr; } }
+.rg-card{ background:var(--paper); border:1px solid var(--rule); padding:1.25rem 1.3rem; }
+.rg-card__k{ font-size:.69rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--rg-purple); margin:0 0 .4rem; }
+.rg-card h3{ font-size:1.05rem; font-weight:700; letter-spacing:-.02em; margin:0 0 .45rem; }
+.rg-card p{ margin:0; font-size:.9rem; color:var(--soft); line-height:1.55; }
+.rg-foot{ margin-top:1.4rem; padding-top:1.1rem; border-top:1px solid var(--rule);
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap:.6rem 1.5rem; align-items:center; }
+
+/* 03 · About + journey */
 .about{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);
   gap:clamp(2rem,5vw,5.5rem); align-items:start; }
 @media (max-width:920px){ .about{ grid-template-columns:1fr; } }
@@ -188,25 +210,6 @@ a{ color:inherit; }
   color:var(--ink); margin:2.6rem 0 0; padding-bottom:.6rem; }
 .tlgroup:first-of-type{ margin-top:0; }
 
-/* 03 · Toolkit */
-.kit{ display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
-  gap:clamp(2rem,4.5vw,5rem); align-items:start; }
-@media (max-width:920px){ .kit{ grid-template-columns:1fr; gap:2.2rem; } }
-.kgroup{ margin-bottom:1.7rem; }
-.kgroup:last-child{ margin-bottom:0; }
-.kgroup__k{ font-size:.69rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
-  color:var(--faint); margin:0 0 .75rem; padding-bottom:.5rem; border-bottom:1px solid var(--rule); }
-.krow{ display:grid; grid-template-columns:repeat(4,1fr); gap:.6rem; }
-@media (max-width:1040px){ .krow{ grid-template-columns:repeat(3,1fr); } }
-@media (max-width:520px){ .krow{ grid-template-columns:repeat(2,1fr); } }
-.tool{ background:var(--white); border:1px solid var(--rule); padding:.9rem .85rem 1rem;
-  transition:transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease); }
-.tool:hover{ transform:translateY(-3px); box-shadow:var(--lift); border-color:var(--rule-2); }
-@media (prefers-reduced-motion: reduce){ .tool:hover{ transform:none; } }
-.tool svg{ width:18px; height:18px; display:block; margin-bottom:.55rem; }
-.tool b{ display:block; font-size:.89rem; font-weight:700; letter-spacing:-.022em; }
-.tool span{ display:block; font-size:.75rem; color:var(--soft); margin-top:.12rem; line-height:1.4; }
-
 /* 04 · Projects */
 .vblock{ display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
   gap:clamp(1.6rem,4vw,4rem); align-items:center; }
@@ -218,7 +221,6 @@ a{ color:inherit; }
 .vmedia{ display:grid; gap:.5rem; }
 .vmedia img{ width:100%; object-fit:cover; }
 .vmain{ aspect-ratio:3/2; }
-/* portrait photographs shown whole: natural ratio, nothing cropped or stretched */
 .vports{ display:grid; grid-template-columns:1fr 1fr; gap:.5rem; align-items:start; max-width:460px; }
 .vports img{ width:100%; height:auto; object-fit:contain; border:1px solid var(--rule); background:var(--white); }
 .vlogo{ width:100%; max-width:252px; height:auto; object-fit:contain; border:1px solid var(--rule); }
@@ -270,7 +272,7 @@ a{ color:inherit; }
   color:var(--faint); }
 .lbl--done{ color:var(--green-soft); }
 
-/* 05 · Beyond */
+/* 05 · Sports & Beyond */
 .bw{ display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:clamp(1.6rem,3.5vw,3rem);
   align-items:start; }
 @media (max-width:880px){ .bw{ grid-template-columns:1fr; } }
@@ -291,14 +293,33 @@ a{ color:inherit; }
 .volstrip{ display:grid; grid-template-columns:repeat(4,1fr); gap:.4rem; margin-top:.9rem; max-width:420px; }
 .volstrip img{ width:100%; aspect-ratio:1/1; object-fit:cover; }
 
-/* 06 · Connect */
+/* 06 · Toolkit */
+.kit{ display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  gap:clamp(2rem,4.5vw,5rem); align-items:start; }
+@media (max-width:920px){ .kit{ grid-template-columns:1fr; gap:2.2rem; } }
+.kgroup{ margin-bottom:1.7rem; }
+.kgroup:last-child{ margin-bottom:0; }
+.kgroup__k{ font-size:.69rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--faint); margin:0 0 .75rem; padding-bottom:.5rem; border-bottom:1px solid var(--rule); }
+.krow{ display:grid; grid-template-columns:repeat(4,1fr); gap:.6rem; }
+@media (max-width:1040px){ .krow{ grid-template-columns:repeat(3,1fr); } }
+@media (max-width:520px){ .krow{ grid-template-columns:repeat(2,1fr); } }
+.tool{ background:var(--white); border:1px solid var(--rule); padding:.9rem .85rem 1rem;
+  transition:transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease); }
+.tool:hover{ transform:translateY(-3px); box-shadow:var(--lift); border-color:var(--rule-2); }
+@media (prefers-reduced-motion: reduce){ .tool:hover{ transform:none; } }
+.tool svg{ width:18px; height:18px; display:block; margin-bottom:.55rem; }
+.tool b{ display:block; font-size:.89rem; font-weight:700; letter-spacing:-.022em; }
+.tool span{ display:block; font-size:.75rem; color:var(--soft); margin-top:.12rem; line-height:1.4; }
+
+/* 07 · Connect */
 .end{ background:var(--paper); border-top:1px solid var(--rule); }
 .end .h2{ max-width:14ch; }
 .end__g{ display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
   gap:clamp(2rem,5vw,5rem); align-items:start; }
 @media (max-width:860px){ .end__g{ grid-template-columns:1fr; } }
 .openrole{ border-left:3px solid var(--green); padding:.2rem 0 .2rem 1.1rem; margin:1.6rem 0 1.5rem;
-  font-size:1rem; font-weight:600; color:var(--green-deep); max-width:40ch; }
+  font-size:1rem; font-weight:600; color:var(--green-deep); max-width:42ch; }
 .end__p{ color:var(--soft); max-width:42ch; margin:0 0 1.8rem; }
 .btn--w{ background:var(--green); color:#fff; border-color:var(--green); }
 .btn--w:hover{ background:var(--green-deep); border-color:var(--green-deep); }
@@ -371,10 +392,11 @@ body.lock{ overflow:hidden; }
     <a class="brand" href="#home">Suransh Duggal<span>.</span></a>
     <nav class="nav__links" aria-label="Sections">
       <a class="nav__a" href="#home">Home</a>
-      <a class="nav__a" href="#journey">My Journey</a>
-      <a class="nav__a" href="#toolkit">Toolkit</a>
+      <a class="nav__a" href="#rallygully">B2B Playbook</a>
+      <a class="nav__a" href="#journey">Journey</a>
       <a class="nav__a" href="#projects">Projects</a>
-      <a class="nav__a" href="#beyond">Beyond Work</a>
+      <a class="nav__a" href="#beyond">Sports &amp; Community</a>
+      <a class="nav__a" href="#toolkit">Toolkit</a>
       <a class="nav__a" href="#connect">Connect</a>
     </nav>
     <a class="btn btn--s" href="#connect">Get in touch</a>
@@ -385,10 +407,11 @@ body.lock{ overflow:hidden; }
   <nav class="mob" id="mobmenu" hidden aria-label="Sections">
     <div class="shell">
       <a href="#home">Home</a>
-      <a href="#journey">My Journey</a>
-      <a href="#toolkit">Toolkit</a>
+      <a href="#rallygully">B2B Playbook</a>
+      <a href="#journey">Journey</a>
       <a href="#projects">Projects</a>
-      <a href="#beyond">Beyond Work</a>
+      <a href="#beyond">Sports &amp; Community</a>
+      <a href="#toolkit">Toolkit</a>
       <a href="#connect">Connect</a>
     </div>
   </nav>
@@ -403,43 +426,44 @@ body.lock{ overflow:hidden; }
         <div>
           <p class="hero__name rv in">Suransh Duggal, Faridabad, Delhi NCR</p>
           <h1 class="h1 rv in d1">
-            I've sold it, priced it,<br>
-            and checked the <span class="ser">numbers</span>.
+            I've built it, pitched it,<br>
+            and closed it <span class="ser">on the ground</span>.
           </h1>
           <p class="hero__sub rv in d1">
-            <strong>Merchant promotions at Vaco.</strong> <strong>School partnerships at KidZania.</strong>
-            Two consumer ventures I ran myself. Now finishing the PGP in Revenue, Tech &amp;
-            Entrepreneurship at Hive School of Business.
+            <strong>School &amp; corporate outreach at KidZania across Gurugram and Faridabad.</strong>
+            <strong>Merchant promotions at Vaco.</strong> Two consumer ventures I ran myself.
+            Finishing the PGP in Revenue, Tech &amp; Entrepreneurship at Hive School of Business.
           </p>
           <div class="rolebox rv in d2">
             <span class="rolebox__k">Where I'm headed</span>
-            <b>Category Manager</b><i aria-hidden="true">/</i>
-            <b>KAM (Marketplaces)</b><i aria-hidden="true">/</i>
-            <b>Growth</b>
+            <b>Founder's Office</b><i aria-hidden="true">/</i>
+            <b>B2B Partnerships</b><i aria-hidden="true">/</i>
+            <b>GTM &amp; Business Growth</b>
           </div>
           <div class="hero__cta rv in d2">
-            <a class="btn" href="#projects">Explore My Work</a>
+            <a class="btn" href="#rallygully">Read B2B Playbook</a>
+            <a class="btn btn--g" href="#projects">Explore My Work</a>
             <a class="btn btn--g" href="Suransh-Duggal-CV.pdf" target="_blank" rel="noopener" data-open="cv">View Résumé</a>
           </div>
         </div>
 
         <figure class="hero__fig rv in d1">
-          <img src="assets/portrait.jpg" width="795" height="1042" alt="Suransh Duggal" fetchpriority="high">
+          <img src="portrait.jpg" width="795" height="1042" alt="Suransh Duggal" fetchpriority="high">
         </figure>
       </div>
 
       <div class="signals rv in d2">
         <span>
-          <span class="signal__k">Experience</span>
-          <span class="signal__v">Vaco <i>→</i> KidZania</span>
-        </span>
-        <span>
-          <span class="signal__k">Education</span>
-          <span class="signal__v">Delhi University <i>→</i> Hive</span>
+          <span class="signal__k">Delhi NCR B2B</span>
+          <span class="signal__v">Schools <i>·</i> Corporates <i>·</i> NGOs</span>
         </span>
         <span>
           <span class="signal__k">Ventures</span>
-          <span class="signal__v">PohaTalk <i>·</i> Crumbgasm</span>
+          <span class="signal__v">Crumbgasm <i>·</i> PohaTalk</span>
+        </span>
+        <span>
+          <span class="signal__k">Sports</span>
+          <span class="signal__v">Cricket <i>·</i> Hansraj Trophy</span>
         </span>
       </div>
     </div>
@@ -447,33 +471,101 @@ body.lock{ overflow:hidden; }
 
   <div class="ticker" aria-hidden="true">
     <div class="ticker__t">
-      <span>Category</span><span class="ser">Pricing</span><span>Marketplaces</span>
-      <span class="ser">Unit economics</span><span>D2C</span><span class="ser">Customer insight</span>
-      <span>Storefront audits</span>
-      <span>Category</span><span class="ser">Pricing</span><span>Marketplaces</span>
-      <span class="ser">Unit economics</span><span>D2C</span><span class="ser">Customer insight</span>
-      <span>Storefront audits</span>
+      <span>B2B Partnerships</span><span class="ser">GTM Strategy</span><span>Revenue Ownership</span>
+      <span class="ser">On-Ground Execution</span><span>Institutional Sales</span><span class="ser">Brand Activations</span>
+      <span>Sports &amp; Community</span>
+      <span>B2B Partnerships</span><span class="ser">GTM Strategy</span><span>Revenue Ownership</span>
+      <span class="ser">On-Ground Execution</span><span>Institutional Sales</span><span class="ser">Brand Activations</span>
+      <span>Sports &amp; Community</span>
     </div>
   </div>
 
-  <!-- ============ 02 · ABOUT & JOURNEY ============ -->
-  <section class="band" id="journey">
+  <!-- ============ 02 · RALLYGULLY B2B PLAYBOOK ============ -->
+  <section class="band" id="rallygully">
+    <div class="shell">
+      <div class="rg-wrap rv">
+        <p class="mark"><span class="mark__n fig">02</span><span class="mark__t">B2B Growth Playbook</span></p>
+        <div class="rg-top">
+          <h2 class="h2">How I'd approach RallyGully's <span class="ser">B2B vertical</span></h2>
+          <p>
+            RallyGully already has the hardest piece in place: active courts and communities across
+            <strong>Delhi NCR</strong> (from East of Kailash and Dwarka to Panchsheel Enclave, DPSG Palam Vihar,
+            and Golf Course Ext. Road). The next leap is turning those venues, audiences, and operational
+            capabilities into <strong>predictable, recurring B2B revenue</strong> across five business lines.
+          </p>
+        </div>
+
+        <div class="rg-grid">
+          <article class="rg-card">
+            <p class="rg-card__k">01 · Corporate Engagement &amp; Retainers</p>
+            <h3>Turn off-peak weekday slots into corporate leagues</h3>
+            <p>
+              Pitch HR and admin teams around Golf Course Ext. Road, CyberHub, and South Delhi with
+              structured quarterly wellness memberships and inter-office pickleball and padel leagues,
+              monetising low-utilisation daytime hours with recurring contracts.
+            </p>
+          </article>
+
+          <article class="rg-card">
+            <p class="rg-card__k">02 · Institutional &amp; RWA Partnerships</p>
+            <h3>Scale school, college &amp; society tie-ups</h3>
+            <p>
+              Apply the exact Gurugram and Faridabad school partnership playbook I ran at KidZania:
+              target decision-makers at schools, campuses, and RWAs for coaching academies,
+              inter-school tournaments, and revenue-share court setups.
+            </p>
+          </article>
+
+          <article class="rg-card">
+            <p class="rg-card__k">03 · Brand Partnerships &amp; Activations</p>
+            <h3>Package tournaments into sponsor-ready properties</h3>
+            <p>
+              Bundle court branding, weekend socials, and player sampling for hydration, nutrition,
+              and activewear brands. Pair every campaign with clean post-event visibility reports to
+              convert one-off activations into monthly retainers.
+            </p>
+          </article>
+
+          <article class="rg-card">
+            <p class="rg-card__k">04 · Ecosystem Distribution &amp; Operating Cadence</p>
+            <h3>Cross-pollinate communities with repeatable tracking</h3>
+            <p>
+              Partner with local gyms, running clubs, and cafés for beginner mixers, while running a
+              disciplined B2B pipeline with pricing sheets, conversion tracking, vendor coordination,
+              and quarterly revenue forecasts directly with the founders.
+            </p>
+          </article>
+        </div>
+
+        <div class="rg-foot">
+          <p class="note" style="margin:0">
+            Initial ideas based on RallyGully's Delhi NCR venues and B2B priorities, meant to be tested on the ground with the team.
+          </p>
+          <a class="btn btn--s" href="#connect">Let's discuss this</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 · ABOUT & JOURNEY ============ -->
+  <section class="band band--tint" id="journey">
     <div class="shell about">
       <div class="about__s rv">
-        <p class="mark"><span class="mark__n fig">02</span><span class="mark__t">About me</span></p>
-        <h2 class="h2">Curious about both <span class="ser">sides</span> of a business</h2>
+        <p class="mark"><span class="mark__n fig">03</span><span class="mark__t">About me</span></p>
+        <h2 class="h2">Owner mindset, <span class="ser">commercial</span> execution</h2>
         <p class="about__p">
-          I'm a commerce graduate interested in how businesses understand customers, price their
-          products and turn everyday execution into results.
+          I'm a commerce graduate who likes working across the whole business: prospecting the
+          partner, structuring the commercial offer, and staying on the ground until delivery is done.
         </p>
         <p class="about__p">
-          Checking promotions at Vaco taught me to verify before concluding. Selling school visits at
-          KidZania put me in front of the customer. Running PohaTalk and Crumbgasm meant price, product
-          and customer all landed on me the same morning. Hive is where I'm putting those pieces together.
+          Selling school visits and piloting corporate outreach at KidZania put me directly in front
+          of Delhi NCR decision-makers. Checking merchant promotions at Vaco built my analytical
+          discipline. Running PohaTalk and Crumbgasm meant pricing, operations, and revenue all
+          landed on me the same day.
         </p>
         <blockquote class="pull">
-          I like understanding what sits behind a business decision: the customer, the numbers and the
-          work needed to make it happen.
+          I like owning the full loop: figuring out the commercial model, pitching the partner, and
+          making sure it actually works on the ground.
         </blockquote>
       </div>
 
@@ -481,24 +573,24 @@ body.lock{ overflow:hidden; }
         <p class="tlgroup">Experience</p>
         <div class="tl">
           <div class="tlrow">
-            <div class="tlrow__w">Apr 2025 — Mar 2026</div>
+            <div class="tlrow__w">Apr 2025 to Mar 2026</div>
             <div>
               <h3 class="h3">Business Development Executive, Group Sales</h3>
-              <p class="tlrow__o">KidZania, Noida</p>
-              <p class="tlrow__p">Managed school partnerships across the Gurugram and Faridabad region.
-                Closed group packages, handled client communication from first contact through to the
-                visit, and worked on increasing student visits through relationship building and follow-ups.
-                Supported pilot outreach to corporates and NGOs.</p>
+              <p class="tlrow__o">KidZania, Noida · Gurugram &amp; Faridabad Territory</p>
+              <p class="tlrow__p">Owned institutional school partnerships across Gurugram and
+                Faridabad. Built relationships with decision-makers, closed commercial group packages,
+                and owned end-to-end client communication from first outreach through on-ground visit
+                execution. Also supported pilot B2B outreach to corporates and NGOs.</p>
             </div>
           </div>
           <div class="tlrow">
-            <div class="tlrow__w">Aug 2023 — Apr 2024</div>
+            <div class="tlrow__w">Aug 2023 to Apr 2024</div>
             <div>
               <h3 class="h3">Analyst, Merchant Promotions</h3>
               <p class="tlrow__o">Vaco Binary Semantics LLP, Gurgaon</p>
-              <p class="tlrow__p">Point of contact for the product team. Verified and validated promotions
-                for different locales, worked on dynamic process updates, drove follow-ups on complicated
-                scenarios and handled escalations.</p>
+              <p class="tlrow__p">Cross-functional point of contact for the product team. Verified and
+                validated promotions across locales, managed dynamic process updates, drove follow-ups
+                on complex edge cases, and resolved escalations.</p>
               <p class="tlrow__p"><span class="tag">Employer: Vaco Binary Semantics. Client account supported: Google merchant promotions.</span></p>
             </div>
           </div>
@@ -507,22 +599,23 @@ body.lock{ overflow:hidden; }
         <p class="tlgroup">Education and certification</p>
         <div class="tl">
           <div class="tlrow">
-            <div class="tlrow__w">Apr 2026 — present</div>
+            <div class="tlrow__w">Apr 2026 to present</div>
             <div>
               <h3 class="h3">PGP in Revenue, Tech &amp; Entrepreneurship</h3>
               <p class="tlrow__o">Hive School of Business, Gurugram</p>
-              <p class="tlrow__p">Applied consumer business projects and D2C exposure, including building
-                Crumbgasm for the D2C Grand Bazaar and the independent storefront case studies. Currently
-                at the end of the programme.</p>
+              <p class="tlrow__p">Applied consumer business projects and D2C GTM execution, including
+                launching Crumbgasm at the D2C Grand Bazaar and authoring independent commercial
+                storefront audits. Currently completing the programme.</p>
             </div>
           </div>
           <div class="tlrow">
-            <div class="tlrow__w">Sep 2020 — Jul 2023</div>
+            <div class="tlrow__w">Sep 2020 to Jul 2023</div>
             <div>
               <h3 class="h3">B.Com (Programme), 7.68 CGPA</h3>
               <p class="tlrow__o">Shyam Lal College, University of Delhi</p>
-              <p class="tlrow__p">Senior Coordinator at the Placement Cell and member of Amour, the
-                Commerce Society. Co-founded PohaTalk during this period.</p>
+              <p class="tlrow__p">Senior Coordinator at the Placement Cell (managing corporate
+                relationships and campus drives) and member of Amour, the Commerce Society. Co-founded
+                PohaTalk during this period.</p>
             </div>
           </div>
           <div class="tlrow">
@@ -538,187 +631,100 @@ body.lock{ overflow:hidden; }
     </div>
   </section>
 
-  <!-- ============ 03 · TOOLKIT ============ -->
-  <section class="band band--tint" id="toolkit">
-    <div class="shell kit">
-      <div class="rv">
-        <p class="mark"><span class="mark__n fig">03</span><span class="mark__t">Toolkit</span></p>
-        <h2 class="h2">Ideas, organised. Work, <span class="ser">in motion</span>.</h2>
-        <p class="lede" style="margin-top:1rem">
-          What I use for analysis, research and getting work out of the door, grouped by the job it does
-          rather than by how often I open it.
-        </p>
-        <p class="note" style="margin-top:1.2rem">
-          Tools I work with. No proficiency ratings, and nothing listed for the look of it.
-        </p>
-      </div>
-
-      <div class="rv d1">
-        <div class="kgroup">
-          <p class="kgroup__k">Analysis and research</p>
-          <div class="krow">
-            <div class="tool">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="16"/><path d="M3.5 9h17M9 9v11"/></svg>
-              <b>Excel</b><span>Cost sheets and pricing comparisons</span>
-            </div>
-            <div class="tool">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V11M10 20V5M16 20v-8M21 20H3"/></svg>
-              <b>Power BI</b><span>Dashboards and visual analysis</span>
-            </div>
-            <div class="tool">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15l5-6 4 4 5-7"/><path d="M17 6h4v4"/></svg>
-              <b>Google Trends</b><span>Demand and seasonality signals</span>
-            </div>
-            <div class="tool">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/></svg>
-              <b>Semrush</b><span>Category and competitor research</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="kgroup">
-          <p class="kgroup__k">Marketing and commerce</p>
-          <div class="krow">
-            <div class="tool">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14V9h4l6-4v16l-6-4H4Z"/><path d="M18 9.5a4 4 0 0 1 0 5"/></svg>
-              <b>Google Ads</b><span>Search and shopping campaign structure</span>
-            </div>
-            <div class="tool">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16c0-5 2-8 4.5-8S11 12 12 14s2 6 4.5 6S21 17 21 12"/></svg>
-              <b>Meta Ads Manager</b><span>Audience and placement setup</span>
-            </div>
-            <div class="tool">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16l-1.4 10.2a2 2 0 0 1-2 1.8H7.4a2 2 0 0 1-2-1.8Z"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/></svg>
-              <b>Shopify</b><span>Built the Crumbgasm storefront</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="kgroup">
-          <p class="kgroup__k">AI and productivity</p>
-          <div class="krow">
-            <div class="tool">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.5 1.5M16.2 16.2l1.5 1.5M17.7 6.3l-1.5 1.5M7.8 16.2l-1.5 1.5"/><circle cx="12" cy="12" r="3"/></svg>
-              <b>Claude</b><span>Research and drafting</span>
-            </div>
-            <div class="tool">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5Z"/></svg>
-              <b>ChatGPT</b><span>Thinking through problems</span>
-            </div>
-            <div class="tool">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
-              <b>Notion</b><span>Notes, research logs and tracking</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="kgroup">
-          <p class="kgroup__k">Visual communication</p>
-          <div class="krow">
-            <div class="tool">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M15.5 9.8a3.3 3.3 0 0 0-5.6 2.4c0 1.9 1.3 3.1 3 3.1 1.2 0 2.1-.5 2.7-1.3"/></svg>
-              <b>Canva</b><span>Decks and packaging concepts, including the Crumbgasm artwork</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ 04 · PROJECTS ============ -->
   <section class="band" id="projects">
     <div class="shell">
       <div class="bandhead rv">
-        <p class="mark"><span class="mark__n fig">04</span><span class="mark__t">Selected projects</span></p>
-        <h2 class="h2">Ventures I ran, and storefronts I <span class="ser">studied</span></h2>
+        <p class="mark"><span class="mark__n fig">04</span><span class="mark__t">Proof of execution</span></p>
+        <h2 class="h2">Ventures I built, and commercial <span class="ser">audits</span></h2>
         <p class="lede">
-          Two different things. Ventures are businesses I was personally part of. Case studies are
-          independent academic audits of brands I have never worked for.
+          Ventures where I owned commercial decisions and on-ground execution, alongside
+          independent business audits that show how I think through pricing and conversion.
         </p>
       </div>
 
-      <!-- PohaTalk -->
+      <!-- Crumbgasm -->
       <article class="vblock rv">
         <div class="vmedia">
-          <div class="vports">
-            <img src="assets/pohatalk-main.jpg" alt="The PohaTalk cart set up for service, with its menu banner and branded front panel" loading="lazy">
-            <img src="assets/pohatalk-build.jpg" alt="The PohaTalk cart being put together before launch" loading="lazy">
+          <img class="vmain" src="crumbgasm-pitch.jpg" alt="Suransh presenting Crumbgasm" loading="lazy">
+          <div class="vrow">
+            <img src="crumbgasm-team.jpg" alt="With the Crumbgasm team at the stall" loading="lazy">
+            <img src="crumbgasm-pack.jpg" alt="Crumbgasm lime cookie packaging concept" loading="lazy">
           </div>
-          <img class="vlogo" src="assets/pohatalk-logo.jpg" alt="The PohaTalk brand lockup" loading="lazy">
         </div>
         <div>
-          <p class="vkick">Venture 01 · Faridabad</p>
-          <h3 class="vtitle">PohaTalk</h3>
+          <p class="vkick">Venture 01 · On-ground Event &amp; Consumer GTM</p>
+          <h3 class="vtitle">Crumbgasm</h3>
           <p class="vtext">
-            A morning poha venture co-founded during college. We ran
-            <strong>two carts at two locations</strong>, and the venture was
-            <strong>profitable from its first day of trading</strong>.
+            A healthy cookie brand built at Hive and launched on the ground at the D2C Grand Bazaar
+            mela. I owned the commercial side from concept to event-day execution: positioning,
+            pricing, packaging, storefront setup, and live stall sales.
           </p>
-          <p class="vtext">
-            Every decision showed up the same morning: what to buy, what to charge, how it was made and
-            whether anyone came back for it. Small enough that nothing could be delegated, which is
-            exactly what made it useful.
-          </p>
+          <div class="receipts">
+            <div class="receipt"><b class="fig">99</b><span>Orders in one day</span></div>
+            <div class="receipt receipt--hi"><b class="fig">₹19,752</b><span>Single-day event revenue</span></div>
+            <div class="receipt"><b class="fig">22.5%</b><span>Contribution margin</span></div>
+          </div>
+          <p class="note">Team results at the event, not solo claims. Contribution margin covers
+            variable costs, so it is not net profit.</p>
           <ul class="vtags">
-            <li>Procurement</li><li>Pricing</li><li>Product preparation</li>
-            <li>Customer experience</li><li>Daily operations</li>
+            <li>Go-to-market</li><li>On-ground event sales</li><li>Pricing &amp; unit economics</li>
+            <li>Positioning</li><li>Packaging</li><li>Shopify storefront</li>
           </ul>
-          <p class="vshows">What it shows: customer understanding, everyday pricing decisions and running
-            an operation where the feedback arrives the same day.</p>
+          <p class="vshows">What it shows: taking an idea from scratch to a live event experience,
+            pitching customers in person, and tracking commercial unit economics.</p>
         </div>
       </article>
 
-      <!-- Crumbgasm -->
+      <!-- PohaTalk -->
       <article class="vblock vblock--flip rv">
         <div class="vmedia">
-          <img class="vmain" src="assets/crumbgasm-pitch.jpg" alt="Suransh presenting Crumbgasm" loading="lazy">
-          <div class="vrow">
-            <img src="assets/crumbgasm-team.jpg" alt="With the Crumbgasm team at the stall" loading="lazy">
-            <img src="assets/crumbgasm-pack.jpg" alt="Crumbgasm lime cookie packaging concept" loading="lazy">
+          <div class="vports">
+            <img src="pohatalk-main.jpg" alt="The PohaTalk cart set up for service, with its menu banner and branded front panel" loading="lazy">
+            <img src="pohatalk-build.jpg" alt="The PohaTalk cart being put together before launch" loading="lazy">
           </div>
+          <img class="vlogo" src="pohatalk-logo.jpg" alt="The PohaTalk brand lockup" loading="lazy">
         </div>
         <div>
-          <p class="vkick">Venture 02 · D2C Grand Bazaar mela</p>
-          <h3 class="vtitle">Crumbgasm</h3>
+          <p class="vkick">Venture 02 · Faridabad · Local Ops</p>
+          <h3 class="vtitle">PohaTalk</h3>
           <p class="vtext">
-            A healthy cookie brand built at Hive and taken to the mela. I worked on the commercial side
-            of getting it in front of people: what it stood for, what it cost, how it was packaged and
-            where it would be sold.
+            A morning poha venture co-founded during college. We operated
+            <strong>two carts at two locations</strong> in Faridabad, and the venture was
+            <strong>profitable from its first day of trading</strong>.
           </p>
-          <div class="receipts">
-            <div class="receipt"><b class="fig">99</b><span>Orders</span></div>
-            <div class="receipt receipt--hi"><b class="fig">₹19,752</b><span>Revenue in one day</span></div>
-            <div class="receipt"><b class="fig">22.5%</b><span>Contribution margin</span></div>
-          </div>
-          <p class="note">Results for the venture at the event, achieved by the team rather than by me
-            alone. Contribution margin covers variable costs, so it is not net profit.</p>
+          <p class="vtext">
+            Every decision showed up the same morning: vendor procurement, pricing, setup, customer
+            experience, and repeat footfall. Small enough that nothing could be delegated, which built
+            real business-owner instincts.
+          </p>
           <ul class="vtags">
-            <li>Positioning</li><li>Pricing</li><li>Packaging</li>
-            <li>Shopify storefront</li><li>Go-to-market</li><li>Unit economics</li>
+            <li>Local setup</li><li>Vendor procurement</li><li>Pricing</li>
+            <li>Daily on-ground ops</li><li>Customer retention</li>
           </ul>
-          <p class="vshows">What it shows: the decisions a category owner makes, including price points,
-            pack format and where a product sits against the alternatives.</p>
+          <p class="vshows">What it shows: figuring things out without a playbook, managing local
+            on-ground operations, and keeping unit economics profitable from day one.</p>
         </div>
       </article>
 
       <!-- Case studies -->
       <div style="margin-top:clamp(3.4rem,6vw,5.5rem)">
-        <p class="mark rv"><span class="mark__n fig">04b</span><span class="mark__t">Independent case studies</span></p>
+        <p class="mark rv"><span class="mark__n fig">04b</span><span class="mark__t">Independent commercial audits</span></p>
         <div class="cases rv">
           <article class="case case--open" data-open="pp" tabindex="0" role="button"
                    aria-label="Open the Protein Pantry case study">
-            <div class="case__logo"><img src="assets/logo-pp.png" alt="Protein Pantry" loading="lazy"></div>
+            <div class="case__logo"><img src="logo-pp.png" alt="Protein Pantry" loading="lazy"></div>
             <div class="case__body">
-              <span class="lbl lbl--done">Independent academic audit · Oct 2026</span>
+              <span class="lbl lbl--done">Independent commercial audit · Oct 2026</span>
               <h3 class="case__t">Protein Pantry</h3>
-              <p class="case__d"><strong>Same three packs, ₹60 apart.</strong> An audit of pack pricing
-                and the buying journey.</p>
+              <p class="case__d"><strong>Same three packs, ₹60 apart.</strong> An analytical audit of
+                pricing structure, conversion friction, and guardrails.</p>
               <span class="case__go">Open the case study</span>
             </div>
           </article>
 
           <article class="case case--soon">
-            <div class="case__logo"><img src="assets/logo-nutrabay.png" alt="Nutrabay" loading="lazy"></div>
+            <div class="case__logo"><img src="logo-nutrabay.png" alt="Nutrabay" loading="lazy"></div>
             <div class="case__body">
               <span class="lbl">Coming soon</span>
               <h3 class="case__t">Nutrabay</h3>
@@ -727,7 +733,7 @@ body.lock{ overflow:hidden; }
           </article>
 
           <article class="case case--soon">
-            <div class="case__logo"><img src="assets/logo-phab.png" alt="PHAB" loading="lazy"></div>
+            <div class="case__logo"><img src="logo-phab.png" alt="PHAB" loading="lazy"></div>
             <div class="case__body">
               <span class="lbl">Coming soon</span>
               <h3 class="case__t">PHAB</h3>
@@ -739,40 +745,44 @@ body.lock{ overflow:hidden; }
     </div>
   </section>
 
-  <!-- ============ 05 · BEYOND WORK ============ -->
+  <!-- ============ 05 · SPORTS & COMMUNITY ============ -->
   <section class="band band--tint" id="beyond">
     <div class="shell">
       <div class="bandhead rv">
-        <p class="mark"><span class="mark__n fig">05</span><span class="mark__t">Beyond work</span></p>
+        <p class="mark"><span class="mark__n fig">05</span><span class="mark__t">Sports &amp; community</span></p>
         <h2 class="h2">Cricket, community and <span class="ser">showing up</span></h2>
+        <p class="lede">
+          Playing competitive cricket and organising on the ground is what makes building India's
+          sports ecosystem genuinely exciting to me.
+        </p>
       </div>
 
       <div class="bw rv">
         <div>
           <div class="bwpics">
-            <img class="a" src="assets/cricket-team.jpg" alt="Suransh with his cricket team" loading="lazy">
-            <img class="b" src="assets/cricket-selfie.jpg" alt="Suransh in cricket whites with a teammate" loading="lazy">
+            <img class="a" src="cricket-team.jpg" alt="Suransh with his cricket team" loading="lazy">
+            <img class="b" src="cricket-selfie.jpg" alt="Suransh in cricket whites with a teammate" loading="lazy">
           </div>
-          <p class="bwcap">Cricket has been the constant, through school, college and since.</p>
+          <p class="bwcap">Cricket has been the constant, through school, college (Hansraj Trophy), and since.</p>
         </div>
 
         <div>
           <div class="bwlist">
             <div><span>Cricket</span><span>Played the Hansraj Trophy</span></div>
-            <div><span>School</span><span>Innovative and Creative Head Boy</span></div>
-            <div><span>College</span><span>Senior Coordinator, Placement Cell</span></div>
+            <div><span>Campus B2B</span><span>Senior Coordinator, Placement Cell (DU)</span></div>
+            <div><span>Leadership</span><span>Innovative and Creative Head Boy</span></div>
             <div><span>Society</span><span>Member of Amour, the Commerce Society</span></div>
           </div>
 
           <div class="vol">
-            <h3 class="h3">Giving time to the community</h3>
-            <p>I also volunteer with SNCF, taking part in blood donation activities, tree plantation and
-              cleanliness drives.</p>
+            <h3 class="h3">On-ground community work</h3>
+            <p>I also volunteer with SNCF, participating in blood donation camps, tree plantation
+              drives, and cleanliness initiatives across the community.</p>
             <div class="volstrip">
-              <img src="assets/vol-river.jpg" alt="Volunteers at a river cleanliness drive" loading="lazy">
-              <img src="assets/vol-trees.jpg" alt="Volunteers at a tree plantation programme" loading="lazy">
-              <img src="assets/vol-blood.jpg" alt="A blood donation camp" loading="lazy">
-              <img src="assets/vol-amrit.jpg" alt="Banner at a water cleaning and conservation drive" loading="lazy">
+              <img src="vol-river.jpg" alt="Volunteers at a river cleanliness drive" loading="lazy">
+              <img src="vol-trees.jpg" alt="Volunteers at a tree plantation programme" loading="lazy">
+              <img src="vol-blood.jpg" alt="A blood donation camp" loading="lazy">
+              <img src="vol-amrit.jpg" alt="Banner at a water cleaning and conservation drive" loading="lazy">
             </div>
           </div>
         </div>
@@ -780,17 +790,98 @@ body.lock{ overflow:hidden; }
     </div>
   </section>
 
-  <!-- ============ 06 · CONNECT ============ -->
+  <!-- ============ 06 · TOOLKIT ============ -->
+  <section class="band" id="toolkit">
+    <div class="shell kit">
+      <div class="rv">
+        <p class="mark"><span class="mark__n fig">06</span><span class="mark__t">Toolkit</span></p>
+        <h2 class="h2">Ideas, organised. Work, <span class="ser">in motion</span>.</h2>
+        <p class="lede" style="margin-top:1rem">
+          What I use for commercial analysis, revenue tracking, market research, and getting
+          campaigns out of the door.
+        </p>
+        <p class="note" style="margin-top:1.2rem">
+          Tools I work with. No proficiency ratings, and nothing listed for the look of it.
+        </p>
+      </div>
+
+      <div class="rv d1">
+        <div class="kgroup">
+          <p class="kgroup__k">Analysis and commercial tracking</p>
+          <div class="krow">
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="16"/><path d="M3.5 9h17M9 9v11"/></svg>
+              <b>Excel</b><span>Pricing models, forecasts &amp; cost sheets</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V11M10 20V5M16 20v-8M21 20H3"/></svg>
+              <b>Power BI</b><span>Performance dashboards &amp; reporting</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15l5-6 4 4 5-7"/><path d="M17 6h4v4"/></svg>
+              <b>Google Trends</b><span>Demand and seasonality signals</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/></svg>
+              <b>Semrush</b><span>Market and competitor research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kgroup">
+          <p class="kgroup__k">Growth, campaigns and commerce</p>
+          <div class="krow">
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14V9h4l6-4v16l-6-4H4Z"/><path d="M18 9.5a4 4 0 0 1 0 5"/></svg>
+              <b>Google Ads</b><span>Search and campaign structure</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16c0-5 2-8 4.5-8S11 12 12 14s2 6 4.5 6S21 17 21 12"/></svg>
+              <b>Meta Ads Manager</b><span>Audience and local amplification</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16l-1.4 10.2a2 2 0 0 1-2 1.8H7.4a2 2 0 0 1-2-1.8Z"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/></svg>
+              <b>Shopify</b><span>Built the Crumbgasm storefront</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kgroup">
+          <p class="kgroup__k">Workflows and decks</p>
+          <div class="krow">
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.5 1.5M16.2 16.2l1.5 1.5M17.7 6.3l-1.5 1.5M7.8 16.2l-1.5 1.5"/><circle cx="12" cy="12" r="3"/></svg>
+              <b>Claude</b><span>Research and proposal drafting</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5Z"/></svg>
+              <b>ChatGPT</b><span>Structuring GTM problems</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+              <b>Notion</b><span>Pipeline notes &amp; ops tracking</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M15.5 9.8a3.3 3.3 0 0 0-5.6 2.4c0 1.9 1.3 3.1 3 3.1 1.2 0 2.1-.5 2.7-1.3"/></svg>
+              <b>Canva</b><span>Partner pitch decks &amp; brand collateral</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 · CONNECT ============ -->
   <section class="band end" id="connect">
     <div class="shell end__g">
       <div class="rv">
-        <p class="mark"><span class="mark__n fig">06</span><span class="mark__t">Connect with me</span></p>
+        <p class="mark"><span class="mark__n fig">07</span><span class="mark__t">Connect with me</span></p>
         <h2 class="h2">Let's talk <span class="ser">business</span>.</h2>
         <p class="openrole">
-          Open to opportunities in Associate Category Manager, KAM (Marketplaces), and Growth roles.
+          Open to Founder's Office, B2B Partnerships, GTM, and Business Growth roles in Delhi NCR.
         </p>
         <p class="end__p">
-          If something here is useful to your team, I would be glad to talk.
+          Based in Faridabad, ready to meet on the ground across Delhi and Gurugram. If something here is useful to your team, I would be glad to talk.
         </p>
         <a class="btn btn--w" href="mailto:1309suranshduggal@gmail.com">Email me</a>
       </div>
@@ -847,11 +938,11 @@ body.lock{ overflow:hidden; }
         <h4>Read off the live storefront, 8 to 10 October 2026</h4>
         <div class="shots">
           <figure>
-            <img src="assets/evidence-price.jpg" alt="Audit page showing three packs at two prices" loading="lazy">
+            <img src="evidence-price.jpg" alt="Audit page showing three packs at two prices" loading="lazy">
             <figcaption>The pricing observation, reproduced in the cart.</figcaption>
           </figure>
           <figure>
-            <img src="assets/evidence-nav.jpg" alt="Audit page showing the category navigation observation" loading="lazy">
+            <img src="evidence-nav.jpg" alt="Audit page showing the category navigation observation" loading="lazy">
             <figcaption>The category navigation observation.</figcaption>
           </figure>
         </div>
@@ -912,7 +1003,7 @@ body.lock{ overflow:hidden; }
       <button class="x" id="cvX" type="button">Close</button>
     </div>
     <div class="docpage">
-      <img src="assets/cv-page-1.jpg" alt="Résumé of Suransh Duggal, page 1" loading="lazy" width="1240" height="1754">
+      <img src="cv-page-1.jpg" alt="Résumé of Suransh Duggal, page 1" loading="lazy" width="1240" height="1754">
     </div>
   </div>
 </div>
@@ -1006,5 +1097,3 @@ body.lock{ overflow:hidden; }
 </script>
 </body>
 </html>
-
-</body></html>
