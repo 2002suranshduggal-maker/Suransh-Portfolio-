@@ -1,0 +1,1010 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Suransh Duggal — Portfolio</title>
+<meta name="description" content="Suransh Duggal, Faridabad, Delhi NCR. Merchant promotions at Vaco, school partnerships at KidZania, and two consumer ventures. Open to Associate Category Manager, KAM (Marketplaces) and Growth roles.">
+<meta name="theme-color" content="#F7F5EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* =======================================================
+   Tokens
+   ======================================================= */
+:root{
+  --paper:#F7F5EF;
+  --paper-2:#EAF0E7;
+  --white:#FFFFFF;
+  --ink:#20251F;
+  --ink-2:#3A4038;
+  --soft:#5B6158;
+  --faint:#8B8F85;
+  --rule:#E2DFD4;
+  --rule-2:#CBC8BB;
+  --green:#245C43;
+  --green-deep:#1A4531;
+  --green-soft:#2E7555;
+  --green-wash:#EAF0E7;
+  --green-line:rgba(36,92,67,.26);
+  --pad:clamp(1.15rem,4vw,4.5rem);
+  --bleed:clamp(4rem,7.5vw,7.5rem);
+  --maxw:1280px;
+  --ease:cubic-bezier(.22,.7,.3,1);
+  --lift:0 22px 50px -34px rgba(20,23,28,.45);
+  --lift-2:0 34px 74px -40px rgba(20,23,28,.5);
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:84px; }
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+body{ margin:0; background:var(--paper); color:var(--ink);
+  font-family:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:clamp(1rem,.96rem + .2vw,1.08rem); line-height:1.62;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+img{ max-width:100%; display:block; height:auto; }
+a{ color:inherit; }
+::selection{ background:var(--green-wash); }
+:focus-visible{ outline:2px solid var(--green); outline-offset:3px; border-radius:3px; }
+.shell{ width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:var(--pad); }
+.skip{ position:absolute; left:50%; top:-120px; transform:translateX(-50%); z-index:400;
+  background:var(--ink); color:#fff; padding:.7rem 1.2rem; border-radius:0 0 .5rem .5rem;
+  font-weight:600; text-decoration:none; transition:top .18s; }
+.skip:focus{ top:0; }
+
+/* =======================================================
+   Type
+   ======================================================= */
+.ser{ font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-weight:400;
+  letter-spacing:-.015em; }
+.fig{ font-family:'Instrument Serif',Georgia,serif; font-weight:400; font-variant-numeric:lining-nums tabular-nums; }
+.mark{ display:flex; align-items:baseline; gap:.9rem; margin:0 0 1.5rem; }
+.mark__n{ font-size:.74rem; font-weight:700; letter-spacing:.1em; color:var(--green-soft);
+  font-variant-numeric:tabular-nums; }
+.mark__t{ font-size:.74rem; font-weight:600; letter-spacing:.17em; text-transform:uppercase; color:var(--faint); }
+.mark::after{ content:""; flex:1; height:1px; background:var(--rule); }
+.h1{ font-size:clamp(2.6rem,1rem + 5.6vw,5.4rem); line-height:.98; font-weight:700;
+  letter-spacing:-.045em; margin:0; }
+.h1 .ser{ font-weight:400; letter-spacing:-.02em; }
+.h2{ font-size:clamp(2rem,1.2rem + 2.9vw,3.5rem); line-height:1.02; font-weight:700;
+  letter-spacing:-.04em; margin:0; max-width:19ch; }
+.h3{ font-size:1.12rem; font-weight:600; letter-spacing:-.022em; line-height:1.3; margin:0; }
+.lede{ font-size:clamp(1.02rem,.98rem + .34vw,1.18rem); color:var(--soft); max-width:54ch; margin:0; }
+.note{ font-size:.81rem; color:var(--faint); line-height:1.55; }
+
+/* =======================================================
+   Nav
+   ======================================================= */
+.nav{ position:sticky; top:0; z-index:150; background:rgba(247,245,239,.92);
+  backdrop-filter:saturate(1.4) blur(14px); -webkit-backdrop-filter:saturate(1.4) blur(14px);
+  border-bottom:1px solid transparent; transition:border-color .3s var(--ease); }
+.nav[data-stuck="true"]{ border-bottom-color:var(--rule); }
+.nav__in{ display:flex; align-items:center; gap:1rem; min-height:66px; }
+.brand{ text-decoration:none; margin-right:auto; font-weight:700; font-size:1.02rem;
+  letter-spacing:-.03em; }
+.brand span{ color:var(--green-soft); }
+.nav__links{ display:flex; gap:1.5rem; }
+.nav__a{ position:relative; text-decoration:none; font-size:.87rem; font-weight:500; color:var(--soft);
+  padding-block:.35rem; transition:color .2s var(--ease); }
+.nav__a::after{ content:""; position:absolute; left:0; right:0; bottom:0; height:1.5px; background:var(--green);
+  transform:scaleX(0); transform-origin:left; transition:transform .25s var(--ease); }
+.nav__a:hover{ color:var(--ink); }
+.nav__a[aria-current="true"]{ color:var(--ink); font-weight:600; }
+.nav__a[aria-current="true"]::after{ transform:scaleX(1); }
+.btn{ display:inline-flex; align-items:center; gap:.45rem; font-family:inherit; font-size:.9rem;
+  font-weight:600; letter-spacing:-.012em; padding:.82rem 1.5rem; border-radius:999px;
+  border:1px solid var(--green); background:var(--green); color:#fff; text-decoration:none; cursor:pointer;
+  transition:background .2s var(--ease), border-color .2s var(--ease); }
+.btn:hover{ background:var(--green-deep); border-color:var(--green-deep); }
+.btn--g{ background:transparent; color:var(--ink); border-color:var(--rule-2); }
+.btn--g:hover{ background:var(--paper); border-color:var(--ink); }
+.btn--s{ padding:.5rem 1.05rem; font-size:.83rem; }
+.burger{ display:none; width:42px; height:42px; border:1px solid var(--rule-2); border-radius:10px;
+  background:transparent; cursor:pointer; padding:0; place-items:center; color:var(--ink); }
+.burger svg{ width:19px; height:19px; }
+.mob{ display:none; }
+@media (max-width:1060px){
+  .nav__links{ display:none; }
+  .burger{ display:grid; }
+  .mob{ display:block; border-top:1px solid var(--rule); background:var(--paper); }
+  .mob[hidden]{ display:none; }
+  .mob a{ display:block; padding:.9rem 0; text-decoration:none; font-size:.97rem; font-weight:500;
+    border-bottom:1px solid var(--rule); color:var(--ink-2); }
+  .mob a:last-child{ border-bottom:0; }
+}
+
+/* =======================================================
+   01 · Hero
+   ======================================================= */
+.hero{ padding-top:clamp(2.2rem,4vw,4.2rem); padding-bottom:clamp(2rem,3.4vw,3.4rem); }
+.hero__g{ display:grid; grid-template-columns:minmax(0,1.42fr) minmax(0,.58fr);
+  gap:clamp(1.8rem,4vw,4rem); align-items:end; }
+@media (max-width:980px){ .hero__g{ grid-template-columns:1fr; align-items:start; gap:2.2rem; } }
+.hero__name{ font-size:.78rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--faint); margin:0 0 1.5rem; }
+.hero__sub{ color:var(--soft); max-width:46ch; margin:1.7rem 0 0;
+  font-size:clamp(1.02rem,.98rem + .34vw,1.18rem); }
+.hero__sub strong{ color:var(--ink); font-weight:600; }
+.rolebox{ display:flex; flex-wrap:wrap; align-items:center; gap:.5rem .85rem;
+  background:var(--green-wash); border-left:3px solid var(--green);
+  padding:.85rem 1.15rem; margin:1.9rem 0 0; max-width:max-content; }
+.rolebox__k{ font-size:.67rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--green-soft); width:100%; }
+.rolebox b{ font-size:.94rem; font-weight:600; color:var(--green-deep); letter-spacing:-.015em; }
+.rolebox i{ font-style:normal; color:var(--green-line); }
+@media (max-width:460px){ .rolebox i{ display:none; } .rolebox b{ width:100%; } }
+.hero__cta{ display:flex; flex-wrap:wrap; gap:.6rem; margin-top:2rem; }
+.hero__fig{ position:relative; margin:0; }
+.hero__fig img{ width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 12%;
+  border:1px solid var(--rule); }
+@media (max-width:980px){ .hero__fig{ max-width:330px; } }
+
+.signals{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem;
+  border-top:1px solid var(--rule); margin-top:clamp(2.2rem,4vw,3.4rem); padding-top:1.4rem; }
+@media (max-width:700px){ .signals{ grid-template-columns:1fr; gap:1rem; } }
+.signal__k{ font-size:.68rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--faint); display:block; margin-bottom:.25rem; }
+.signal__v{ font-size:.98rem; font-weight:600; letter-spacing:-.022em; }
+.signal__v i{ font-style:normal; color:var(--green-soft); padding-inline:.25rem; }
+
+/* ticker */
+.ticker{ background:var(--green); color:#fff; overflow:hidden; padding-block:.85rem; }
+.ticker__t{ display:flex; gap:2.4rem; width:max-content; animation:slide 38s linear infinite; }
+.ticker__t span{ font-size:.92rem; font-weight:600; letter-spacing:-.01em; white-space:nowrap; }
+.ticker__t span.ser{ font-weight:400; font-size:1.08rem; opacity:.92; }
+.ticker__t span::after{ content:"✦"; margin-left:2.4rem; opacity:.45; font-size:.7rem; vertical-align:middle; }
+@keyframes slide{ to{ transform:translateX(-50%); } }
+@media (prefers-reduced-motion: reduce){ .ticker__t{ animation:none; } }
+
+/* =======================================================
+   Sections
+   ======================================================= */
+.band{ padding-block:var(--bleed); }
+.band--tint{ background:var(--paper); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
+.bandhead{ margin-bottom:clamp(2.2rem,4vw,3.4rem); }
+.bandhead .lede{ margin-top:1rem; }
+
+/* 02 · About + journey */
+.about{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);
+  gap:clamp(2rem,5vw,5.5rem); align-items:start; }
+@media (max-width:920px){ .about{ grid-template-columns:1fr; } }
+.about__s{ position:sticky; top:96px; }
+@media (max-width:920px){ .about__s{ position:static; } }
+.about__p{ color:var(--ink-2); max-width:50ch; margin:1.1rem 0 0; }
+.pull{ margin:1.8rem 0 0; padding-left:1.2rem; border-left:3px solid var(--green);
+  font-size:1.06rem; line-height:1.48; font-weight:500; letter-spacing:-.02em; max-width:36ch; }
+.tl{ border-top:1px solid var(--ink); }
+.tlrow{ display:grid; grid-template-columns:minmax(118px,.26fr) minmax(0,1fr); gap:clamp(1rem,2.5vw,2.4rem);
+  padding:1.5rem 0; border-bottom:1px solid var(--rule); }
+@media (max-width:620px){ .tlrow{ grid-template-columns:1fr; gap:.4rem; } }
+.tlrow__w{ font-size:.79rem; font-weight:600; color:var(--faint); font-variant-numeric:tabular-nums; padding-top:.25rem; }
+.tlrow__o{ font-size:.86rem; font-weight:600; color:var(--green-soft); margin:.18rem 0 .5rem; }
+.tlrow__p{ margin:0 0 .5rem; font-size:.93rem; color:var(--soft); max-width:58ch; }
+.tlrow__p:last-child{ margin-bottom:0; }
+.tag{ display:inline-block; font-size:.76rem; color:var(--ink-2); background:var(--white);
+  border:1px solid var(--rule); padding:.35rem .6rem; }
+.tlgroup{ font-size:.7rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink); margin:2.6rem 0 0; padding-bottom:.6rem; }
+.tlgroup:first-of-type{ margin-top:0; }
+
+/* 03 · Toolkit */
+.kit{ display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  gap:clamp(2rem,4.5vw,5rem); align-items:start; }
+@media (max-width:920px){ .kit{ grid-template-columns:1fr; gap:2.2rem; } }
+.kgroup{ margin-bottom:1.7rem; }
+.kgroup:last-child{ margin-bottom:0; }
+.kgroup__k{ font-size:.69rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--faint); margin:0 0 .75rem; padding-bottom:.5rem; border-bottom:1px solid var(--rule); }
+.krow{ display:grid; grid-template-columns:repeat(4,1fr); gap:.6rem; }
+@media (max-width:1040px){ .krow{ grid-template-columns:repeat(3,1fr); } }
+@media (max-width:520px){ .krow{ grid-template-columns:repeat(2,1fr); } }
+.tool{ background:var(--white); border:1px solid var(--rule); padding:.9rem .85rem 1rem;
+  transition:transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease); }
+.tool:hover{ transform:translateY(-3px); box-shadow:var(--lift); border-color:var(--rule-2); }
+@media (prefers-reduced-motion: reduce){ .tool:hover{ transform:none; } }
+.tool svg{ width:18px; height:18px; display:block; margin-bottom:.55rem; }
+.tool b{ display:block; font-size:.89rem; font-weight:700; letter-spacing:-.022em; }
+.tool span{ display:block; font-size:.75rem; color:var(--soft); margin-top:.12rem; line-height:1.4; }
+
+/* 04 · Projects */
+.vblock{ display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:clamp(1.6rem,4vw,4rem); align-items:center; }
+.vblock + .vblock{ margin-top:clamp(3rem,6vw,5.5rem); padding-top:clamp(3rem,6vw,5.5rem);
+  border-top:1px solid var(--rule); }
+@media (max-width:900px){ .vblock{ grid-template-columns:1fr; gap:1.6rem; } }
+.vblock--flip .vmedia{ order:2; }
+@media (max-width:900px){ .vblock--flip .vmedia{ order:0; } }
+.vmedia{ display:grid; gap:.5rem; }
+.vmedia img{ width:100%; object-fit:cover; }
+.vmain{ aspect-ratio:3/2; }
+/* portrait photographs shown whole: natural ratio, nothing cropped or stretched */
+.vports{ display:grid; grid-template-columns:1fr 1fr; gap:.5rem; align-items:start; max-width:460px; }
+.vports img{ width:100%; height:auto; object-fit:contain; border:1px solid var(--rule); background:var(--white); }
+.vlogo{ width:100%; max-width:252px; height:auto; object-fit:contain; border:1px solid var(--rule); }
+@media (max-width:900px){ .vports{ max-width:420px; } }
+@media (max-width:520px){ .vports{ max-width:none; } }
+.vrow{ display:grid; grid-template-columns:1fr 1fr; gap:.5rem; }
+.vrow img{ aspect-ratio:3/2; }
+.vkick{ font-size:.72rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--green-soft); margin:0 0 .6rem; }
+.vtitle{ font-size:clamp(1.7rem,1.2rem + 1.9vw,2.5rem); font-weight:700; letter-spacing:-.04em;
+  line-height:1.04; margin:0 0 .9rem; }
+.vtext{ margin:0 0 .8rem; font-size:.97rem; color:var(--soft); max-width:50ch; }
+.vtext strong{ color:var(--ink); font-weight:600; }
+.vtags{ list-style:none; margin:1.1rem 0 0; padding:0; display:flex; flex-wrap:wrap; gap:.4rem .5rem; }
+.vtags li{ font-size:.78rem; color:var(--ink-2); border:1px solid var(--rule-2); padding:.28rem .7rem; }
+.vshows{ margin:1.3rem 0 0; padding-left:1rem; border-left:3px solid var(--green);
+  font-size:.9rem; color:var(--soft); max-width:46ch; }
+
+.receipts{ display:grid; grid-template-columns:repeat(3,1fr); gap:.55rem; margin:1.3rem 0 .4rem; }
+@media (max-width:480px){ .receipts{ grid-template-columns:1fr; } }
+.receipt{ border:1px solid var(--rule-2); padding:.9rem .95rem; background:var(--white); }
+.receipt--hi{ background:var(--green); border-color:var(--green); }
+.receipt b{ display:block; font-size:1.5rem; line-height:1.1; color:var(--ink); }
+.receipt--hi b{ color:#fff; }
+.receipt span{ display:block; font-size:.73rem; color:var(--soft); margin-top:.2rem; line-height:1.35; }
+.receipt--hi span{ color:rgba(255,255,255,.82); }
+
+.cases{ display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+@media (max-width:900px){ .cases{ grid-template-columns:1fr; } }
+.case{ background:var(--white); border:1px solid var(--rule); display:flex; flex-direction:column;
+  height:100%; transition:transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease); }
+.case--open{ cursor:pointer; border-color:var(--rule-2); box-shadow:var(--lift); }
+.case--open:hover,.case--open:focus-within{ transform:translateY(-4px); box-shadow:var(--lift-2); }
+@media (prefers-reduced-motion: reduce){ .case--open:hover,.case--open:focus-within{ transform:none; } }
+.case__logo{ aspect-ratio:16/10; display:grid; place-items:center; padding:1.9rem;
+  background:var(--paper); border-bottom:1px solid var(--rule); }
+.case__logo img{ width:min(52%,118px); aspect-ratio:1/1; object-fit:contain; border-radius:.85rem; }
+.case--soon .case__logo img{ opacity:.6; }
+.case__body{ padding:1.2rem 1.25rem 1.35rem; display:flex; flex-direction:column; gap:.5rem; flex:1; }
+.case__t{ font-size:1.2rem; font-weight:700; letter-spacing:-.03em; margin:0; }
+.case--soon .case__t{ color:var(--soft); }
+.case__d{ font-size:.88rem; color:var(--soft); margin:0; }
+.case__d strong{ color:var(--ink); font-weight:600; }
+.case__go{ margin-top:auto; padding-top:.9rem; font-size:.86rem; font-weight:600; color:var(--green-soft);
+  display:inline-flex; align-items:center; gap:.35rem; }
+.case__go::after{ content:"→"; transition:transform .25s var(--ease); }
+.case--open:hover .case__go::after{ transform:translateX(3px); }
+.lbl{ font-size:.69rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--faint); }
+.lbl--done{ color:var(--green-soft); }
+
+/* 05 · Beyond */
+.bw{ display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:clamp(1.6rem,3.5vw,3rem);
+  align-items:start; }
+@media (max-width:880px){ .bw{ grid-template-columns:1fr; } }
+.bwpics{ display:grid; grid-template-columns:1.45fr 1fr; gap:.5rem; align-items:start; }
+.bwpics img{ width:100%; object-fit:cover; }
+.bwpics .a{ aspect-ratio:4/3; }
+.bwpics .b{ aspect-ratio:3/4; object-position:50% 16%; }
+.bwcap{ margin:.7rem 0 0; font-size:.84rem; color:var(--faint); }
+.bwlist{ border-top:1px solid var(--ink); }
+.bwlist div{ display:grid; grid-template-columns:6.5rem 1fr; gap:1rem; font-size:.9rem;
+  padding:.8rem 0; border-bottom:1px solid var(--rule); }
+.bwlist span:first-child{ color:var(--faint); font-size:.78rem; letter-spacing:.06em;
+  text-transform:uppercase; padding-top:.15rem; }
+@media (max-width:480px){ .bwlist div{ grid-template-columns:1fr; gap:.1rem; } }
+.vol{ margin-top:2.2rem; }
+.vol h3{ margin:0 0 .5rem; }
+.vol p{ margin:0; font-size:.92rem; color:var(--soft); max-width:46ch; }
+.volstrip{ display:grid; grid-template-columns:repeat(4,1fr); gap:.4rem; margin-top:.9rem; max-width:420px; }
+.volstrip img{ width:100%; aspect-ratio:1/1; object-fit:cover; }
+
+/* 06 · Connect */
+.end{ background:var(--paper); border-top:1px solid var(--rule); }
+.end .h2{ max-width:14ch; }
+.end__g{ display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+  gap:clamp(2rem,5vw,5rem); align-items:start; }
+@media (max-width:860px){ .end__g{ grid-template-columns:1fr; } }
+.openrole{ border-left:3px solid var(--green); padding:.2rem 0 .2rem 1.1rem; margin:1.6rem 0 1.5rem;
+  font-size:1rem; font-weight:600; color:var(--green-deep); max-width:40ch; }
+.end__p{ color:var(--soft); max-width:42ch; margin:0 0 1.8rem; }
+.btn--w{ background:var(--green); color:#fff; border-color:var(--green); }
+.btn--w:hover{ background:var(--green-deep); border-color:var(--green-deep); }
+.cl a{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1.1rem 0;
+  text-decoration:none; border-bottom:1px solid var(--rule); transition:padding-left .25s var(--ease); }
+.cl a:first-child{ border-top:1px solid var(--rule); }
+.cl a:hover{ padding-left:.5rem; }
+.cl__k{ font-size:.68rem; letter-spacing:.15em; text-transform:uppercase; color:var(--faint); display:block; }
+.cl__v{ font-weight:600; letter-spacing:-.022em; overflow-wrap:anywhere; }
+.cl__i{ color:var(--green-soft); }
+.foot{ background:var(--paper); color:var(--faint); border-top:1px solid var(--rule);
+  padding-block:1.4rem; font-size:.79rem; }
+.foot__in{ display:flex; flex-wrap:wrap; gap:.6rem 1.4rem; justify-content:space-between; }
+
+/* =======================================================
+   Dialogs
+   ======================================================= */
+.modal{ position:fixed; inset:0; z-index:300; background:rgba(20,23,28,.6);
+  backdrop-filter:blur(5px); -webkit-backdrop-filter:blur(5px);
+  display:grid; place-items:start center; padding:clamp(.6rem,3vw,2.5rem) clamp(.6rem,3vw,1.5rem); overflow-y:auto; }
+.modal[hidden]{ display:none; }
+.modal__box{ width:min(100%,920px); background:var(--paper); overflow:hidden;
+  box-shadow:0 50px 100px -40px rgba(0,0,0,.6); }
+.modal__bar{ position:sticky; top:0; z-index:2; display:flex; align-items:center; gap:.8rem;
+  padding:1rem 1.3rem; background:var(--white); border-bottom:1px solid var(--rule); }
+.modal__bar b{ font-size:.97rem; font-weight:700; letter-spacing:-.022em; margin-right:auto; }
+.x{ font-family:inherit; font-size:.82rem; font-weight:600; border:1px solid var(--rule-2);
+  background:var(--white); color:var(--ink); padding:.45rem .9rem; cursor:pointer;
+  text-decoration:none; white-space:nowrap; }
+.x:hover{ background:var(--paper); border-color:var(--ink); }
+.modal__in{ padding:clamp(1.2rem,3vw,2.2rem); }
+.step{ padding:1.4rem 0; border-top:1px solid var(--rule); }
+.step:first-of-type{ border-top:0; padding-top:.4rem; }
+.step__k{ font-size:.7rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--green-soft); margin:0 0 .5rem; }
+.step h4{ font-size:1.2rem; font-weight:700; letter-spacing:-.03em; margin:0 0 .5rem; }
+.step p{ margin:0 0 .7rem; color:var(--ink-2); font-size:.95rem; max-width:64ch; }
+.step p:last-child{ margin-bottom:0; }
+.step ul{ margin:.5rem 0 0; padding-left:1.1rem; color:var(--soft); font-size:.92rem; }
+.step li{ margin-bottom:.35rem; }
+.priceline{ display:flex; flex-wrap:wrap; gap:.8rem; margin:1rem 0 1.2rem; }
+.pricebox{ background:var(--white); border:1px solid var(--rule); padding:.9rem 1.1rem; min-width:155px; }
+.pricebox b{ display:block; font-size:1.9rem; line-height:1.1; }
+.pricebox.hi b{ color:var(--green); }
+.pricebox span{ display:block; font-size:.77rem; color:var(--faint); margin-top:.2rem; }
+.shots{ display:grid; grid-template-columns:1fr 1fr; gap:.7rem; margin-top:1rem; }
+@media (max-width:700px){ .shots{ grid-template-columns:1fr; } }
+.shots figure{ margin:0; border:1px solid var(--rule); overflow:hidden; background:var(--white); }
+.shots figcaption{ padding:.6rem .8rem; font-size:.75rem; color:var(--faint); border-top:1px solid var(--rule); }
+.caveat{ background:var(--paper); border:1px solid var(--rule); padding:1rem 1.1rem; margin-top:1.4rem; }
+body.lock{ overflow:hidden; }
+.docpage{ background:var(--paper); padding:clamp(.5rem,2vw,1.2rem); }
+.docpage img{ width:100%; max-width:860px; margin-inline:auto; border:1px solid var(--rule); background:#fff; }
+
+/* =======================================================
+   Motion
+   ======================================================= */
+@media (prefers-reduced-motion: no-preference){
+  .rv{ opacity:0; transform:translateY(14px); transition:opacity .65s var(--ease), transform .65s var(--ease); }
+  .rv.in{ opacity:1; transform:none; }
+  .rv.d1{ transition-delay:.07s; } .rv.d2{ transition-delay:.14s; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="home">
+  <div class="shell nav__in">
+    <a class="brand" href="#home">Suransh Duggal<span>.</span></a>
+    <nav class="nav__links" aria-label="Sections">
+      <a class="nav__a" href="#home">Home</a>
+      <a class="nav__a" href="#journey">My Journey</a>
+      <a class="nav__a" href="#toolkit">Toolkit</a>
+      <a class="nav__a" href="#projects">Projects</a>
+      <a class="nav__a" href="#beyond">Beyond Work</a>
+      <a class="nav__a" href="#connect">Connect</a>
+    </nav>
+    <a class="btn btn--s" href="#connect">Get in touch</a>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobmenu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <nav class="mob" id="mobmenu" hidden aria-label="Sections">
+    <div class="shell">
+      <a href="#home">Home</a>
+      <a href="#journey">My Journey</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#projects">Projects</a>
+      <a href="#beyond">Beyond Work</a>
+      <a href="#connect">Connect</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ 01 · HERO ============ -->
+  <section class="hero">
+    <div class="shell">
+      <div class="hero__g">
+        <div>
+          <p class="hero__name rv in">Suransh Duggal, Faridabad, Delhi NCR</p>
+          <h1 class="h1 rv in d1">
+            I've sold it, priced it,<br>
+            and checked the <span class="ser">numbers</span>.
+          </h1>
+          <p class="hero__sub rv in d1">
+            <strong>Merchant promotions at Vaco.</strong> <strong>School partnerships at KidZania.</strong>
+            Two consumer ventures I ran myself. Now finishing the PGP in Revenue, Tech &amp;
+            Entrepreneurship at Hive School of Business.
+          </p>
+          <div class="rolebox rv in d2">
+            <span class="rolebox__k">Where I'm headed</span>
+            <b>Category Manager</b><i aria-hidden="true">/</i>
+            <b>KAM (Marketplaces)</b><i aria-hidden="true">/</i>
+            <b>Growth</b>
+          </div>
+          <div class="hero__cta rv in d2">
+            <a class="btn" href="#projects">Explore My Work</a>
+            <a class="btn btn--g" href="Suransh-Duggal-CV.pdf" target="_blank" rel="noopener" data-open="cv">View Résumé</a>
+          </div>
+        </div>
+
+        <figure class="hero__fig rv in d1">
+          <img src="assets/portrait.jpg" width="795" height="1042" alt="Suransh Duggal" fetchpriority="high">
+        </figure>
+      </div>
+
+      <div class="signals rv in d2">
+        <span>
+          <span class="signal__k">Experience</span>
+          <span class="signal__v">Vaco <i>→</i> KidZania</span>
+        </span>
+        <span>
+          <span class="signal__k">Education</span>
+          <span class="signal__v">Delhi University <i>→</i> Hive</span>
+        </span>
+        <span>
+          <span class="signal__k">Ventures</span>
+          <span class="signal__v">PohaTalk <i>·</i> Crumbgasm</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__t">
+      <span>Category</span><span class="ser">Pricing</span><span>Marketplaces</span>
+      <span class="ser">Unit economics</span><span>D2C</span><span class="ser">Customer insight</span>
+      <span>Storefront audits</span>
+      <span>Category</span><span class="ser">Pricing</span><span>Marketplaces</span>
+      <span class="ser">Unit economics</span><span>D2C</span><span class="ser">Customer insight</span>
+      <span>Storefront audits</span>
+    </div>
+  </div>
+
+  <!-- ============ 02 · ABOUT & JOURNEY ============ -->
+  <section class="band" id="journey">
+    <div class="shell about">
+      <div class="about__s rv">
+        <p class="mark"><span class="mark__n fig">02</span><span class="mark__t">About me</span></p>
+        <h2 class="h2">Curious about both <span class="ser">sides</span> of a business</h2>
+        <p class="about__p">
+          I'm a commerce graduate interested in how businesses understand customers, price their
+          products and turn everyday execution into results.
+        </p>
+        <p class="about__p">
+          Checking promotions at Vaco taught me to verify before concluding. Selling school visits at
+          KidZania put me in front of the customer. Running PohaTalk and Crumbgasm meant price, product
+          and customer all landed on me the same morning. Hive is where I'm putting those pieces together.
+        </p>
+        <blockquote class="pull">
+          I like understanding what sits behind a business decision: the customer, the numbers and the
+          work needed to make it happen.
+        </blockquote>
+      </div>
+
+      <div class="rv d1">
+        <p class="tlgroup">Experience</p>
+        <div class="tl">
+          <div class="tlrow">
+            <div class="tlrow__w">Apr 2025 — Mar 2026</div>
+            <div>
+              <h3 class="h3">Business Development Executive, Group Sales</h3>
+              <p class="tlrow__o">KidZania, Noida</p>
+              <p class="tlrow__p">Managed school partnerships across the Gurugram and Faridabad region.
+                Closed group packages, handled client communication from first contact through to the
+                visit, and worked on increasing student visits through relationship building and follow-ups.
+                Supported pilot outreach to corporates and NGOs.</p>
+            </div>
+          </div>
+          <div class="tlrow">
+            <div class="tlrow__w">Aug 2023 — Apr 2024</div>
+            <div>
+              <h3 class="h3">Analyst, Merchant Promotions</h3>
+              <p class="tlrow__o">Vaco Binary Semantics LLP, Gurgaon</p>
+              <p class="tlrow__p">Point of contact for the product team. Verified and validated promotions
+                for different locales, worked on dynamic process updates, drove follow-ups on complicated
+                scenarios and handled escalations.</p>
+              <p class="tlrow__p"><span class="tag">Employer: Vaco Binary Semantics. Client account supported: Google merchant promotions.</span></p>
+            </div>
+          </div>
+        </div>
+
+        <p class="tlgroup">Education and certification</p>
+        <div class="tl">
+          <div class="tlrow">
+            <div class="tlrow__w">Apr 2026 — present</div>
+            <div>
+              <h3 class="h3">PGP in Revenue, Tech &amp; Entrepreneurship</h3>
+              <p class="tlrow__o">Hive School of Business, Gurugram</p>
+              <p class="tlrow__p">Applied consumer business projects and D2C exposure, including building
+                Crumbgasm for the D2C Grand Bazaar and the independent storefront case studies. Currently
+                at the end of the programme.</p>
+            </div>
+          </div>
+          <div class="tlrow">
+            <div class="tlrow__w">Sep 2020 — Jul 2023</div>
+            <div>
+              <h3 class="h3">B.Com (Programme), 7.68 CGPA</h3>
+              <p class="tlrow__o">Shyam Lal College, University of Delhi</p>
+              <p class="tlrow__p">Senior Coordinator at the Placement Cell and member of Amour, the
+                Commerce Society. Co-founded PohaTalk during this period.</p>
+            </div>
+          </div>
+          <div class="tlrow">
+            <div class="tlrow__w">Issued July 2025</div>
+            <div>
+              <h3 class="h3">Fundamentals of Digital Marketing</h3>
+              <p class="tlrow__o">Google Digital Garage</p>
+              <p class="tlrow__p">Credential ID 385857342.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 · TOOLKIT ============ -->
+  <section class="band band--tint" id="toolkit">
+    <div class="shell kit">
+      <div class="rv">
+        <p class="mark"><span class="mark__n fig">03</span><span class="mark__t">Toolkit</span></p>
+        <h2 class="h2">Ideas, organised. Work, <span class="ser">in motion</span>.</h2>
+        <p class="lede" style="margin-top:1rem">
+          What I use for analysis, research and getting work out of the door, grouped by the job it does
+          rather than by how often I open it.
+        </p>
+        <p class="note" style="margin-top:1.2rem">
+          Tools I work with. No proficiency ratings, and nothing listed for the look of it.
+        </p>
+      </div>
+
+      <div class="rv d1">
+        <div class="kgroup">
+          <p class="kgroup__k">Analysis and research</p>
+          <div class="krow">
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="16"/><path d="M3.5 9h17M9 9v11"/></svg>
+              <b>Excel</b><span>Cost sheets and pricing comparisons</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V11M10 20V5M16 20v-8M21 20H3"/></svg>
+              <b>Power BI</b><span>Dashboards and visual analysis</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15l5-6 4 4 5-7"/><path d="M17 6h4v4"/></svg>
+              <b>Google Trends</b><span>Demand and seasonality signals</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/></svg>
+              <b>Semrush</b><span>Category and competitor research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kgroup">
+          <p class="kgroup__k">Marketing and commerce</p>
+          <div class="krow">
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14V9h4l6-4v16l-6-4H4Z"/><path d="M18 9.5a4 4 0 0 1 0 5"/></svg>
+              <b>Google Ads</b><span>Search and shopping campaign structure</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16c0-5 2-8 4.5-8S11 12 12 14s2 6 4.5 6S21 17 21 12"/></svg>
+              <b>Meta Ads Manager</b><span>Audience and placement setup</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16l-1.4 10.2a2 2 0 0 1-2 1.8H7.4a2 2 0 0 1-2-1.8Z"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/></svg>
+              <b>Shopify</b><span>Built the Crumbgasm storefront</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kgroup">
+          <p class="kgroup__k">AI and productivity</p>
+          <div class="krow">
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.5 1.5M16.2 16.2l1.5 1.5M17.7 6.3l-1.5 1.5M7.8 16.2l-1.5 1.5"/><circle cx="12" cy="12" r="3"/></svg>
+              <b>Claude</b><span>Research and drafting</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5Z"/></svg>
+              <b>ChatGPT</b><span>Thinking through problems</span>
+            </div>
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+              <b>Notion</b><span>Notes, research logs and tracking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kgroup">
+          <p class="kgroup__k">Visual communication</p>
+          <div class="krow">
+            <div class="tool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#245C43" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M15.5 9.8a3.3 3.3 0 0 0-5.6 2.4c0 1.9 1.3 3.1 3 3.1 1.2 0 2.1-.5 2.7-1.3"/></svg>
+              <b>Canva</b><span>Decks and packaging concepts, including the Crumbgasm artwork</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 · PROJECTS ============ -->
+  <section class="band" id="projects">
+    <div class="shell">
+      <div class="bandhead rv">
+        <p class="mark"><span class="mark__n fig">04</span><span class="mark__t">Selected projects</span></p>
+        <h2 class="h2">Ventures I ran, and storefronts I <span class="ser">studied</span></h2>
+        <p class="lede">
+          Two different things. Ventures are businesses I was personally part of. Case studies are
+          independent academic audits of brands I have never worked for.
+        </p>
+      </div>
+
+      <!-- PohaTalk -->
+      <article class="vblock rv">
+        <div class="vmedia">
+          <div class="vports">
+            <img src="assets/pohatalk-main.jpg" alt="The PohaTalk cart set up for service, with its menu banner and branded front panel" loading="lazy">
+            <img src="assets/pohatalk-build.jpg" alt="The PohaTalk cart being put together before launch" loading="lazy">
+          </div>
+          <img class="vlogo" src="assets/pohatalk-logo.jpg" alt="The PohaTalk brand lockup" loading="lazy">
+        </div>
+        <div>
+          <p class="vkick">Venture 01 · Faridabad</p>
+          <h3 class="vtitle">PohaTalk</h3>
+          <p class="vtext">
+            A morning poha venture co-founded during college. We ran
+            <strong>two carts at two locations</strong>, and the venture was
+            <strong>profitable from its first day of trading</strong>.
+          </p>
+          <p class="vtext">
+            Every decision showed up the same morning: what to buy, what to charge, how it was made and
+            whether anyone came back for it. Small enough that nothing could be delegated, which is
+            exactly what made it useful.
+          </p>
+          <ul class="vtags">
+            <li>Procurement</li><li>Pricing</li><li>Product preparation</li>
+            <li>Customer experience</li><li>Daily operations</li>
+          </ul>
+          <p class="vshows">What it shows: customer understanding, everyday pricing decisions and running
+            an operation where the feedback arrives the same day.</p>
+        </div>
+      </article>
+
+      <!-- Crumbgasm -->
+      <article class="vblock vblock--flip rv">
+        <div class="vmedia">
+          <img class="vmain" src="assets/crumbgasm-pitch.jpg" alt="Suransh presenting Crumbgasm" loading="lazy">
+          <div class="vrow">
+            <img src="assets/crumbgasm-team.jpg" alt="With the Crumbgasm team at the stall" loading="lazy">
+            <img src="assets/crumbgasm-pack.jpg" alt="Crumbgasm lime cookie packaging concept" loading="lazy">
+          </div>
+        </div>
+        <div>
+          <p class="vkick">Venture 02 · D2C Grand Bazaar mela</p>
+          <h3 class="vtitle">Crumbgasm</h3>
+          <p class="vtext">
+            A healthy cookie brand built at Hive and taken to the mela. I worked on the commercial side
+            of getting it in front of people: what it stood for, what it cost, how it was packaged and
+            where it would be sold.
+          </p>
+          <div class="receipts">
+            <div class="receipt"><b class="fig">99</b><span>Orders</span></div>
+            <div class="receipt receipt--hi"><b class="fig">₹19,752</b><span>Revenue in one day</span></div>
+            <div class="receipt"><b class="fig">22.5%</b><span>Contribution margin</span></div>
+          </div>
+          <p class="note">Results for the venture at the event, achieved by the team rather than by me
+            alone. Contribution margin covers variable costs, so it is not net profit.</p>
+          <ul class="vtags">
+            <li>Positioning</li><li>Pricing</li><li>Packaging</li>
+            <li>Shopify storefront</li><li>Go-to-market</li><li>Unit economics</li>
+          </ul>
+          <p class="vshows">What it shows: the decisions a category owner makes, including price points,
+            pack format and where a product sits against the alternatives.</p>
+        </div>
+      </article>
+
+      <!-- Case studies -->
+      <div style="margin-top:clamp(3.4rem,6vw,5.5rem)">
+        <p class="mark rv"><span class="mark__n fig">04b</span><span class="mark__t">Independent case studies</span></p>
+        <div class="cases rv">
+          <article class="case case--open" data-open="pp" tabindex="0" role="button"
+                   aria-label="Open the Protein Pantry case study">
+            <div class="case__logo"><img src="assets/logo-pp.png" alt="Protein Pantry" loading="lazy"></div>
+            <div class="case__body">
+              <span class="lbl lbl--done">Independent academic audit · Oct 2026</span>
+              <h3 class="case__t">Protein Pantry</h3>
+              <p class="case__d"><strong>Same three packs, ₹60 apart.</strong> An audit of pack pricing
+                and the buying journey.</p>
+              <span class="case__go">Open the case study</span>
+            </div>
+          </article>
+
+          <article class="case case--soon">
+            <div class="case__logo"><img src="assets/logo-nutrabay.png" alt="Nutrabay" loading="lazy"></div>
+            <div class="case__body">
+              <span class="lbl">Coming soon</span>
+              <h3 class="case__t">Nutrabay</h3>
+              <p class="case__d">Case study not published yet.</p>
+            </div>
+          </article>
+
+          <article class="case case--soon">
+            <div class="case__logo"><img src="assets/logo-phab.png" alt="PHAB" loading="lazy"></div>
+            <div class="case__body">
+              <span class="lbl">Coming soon</span>
+              <h3 class="case__t">PHAB</h3>
+              <p class="case__d">Case study not published yet.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 · BEYOND WORK ============ -->
+  <section class="band band--tint" id="beyond">
+    <div class="shell">
+      <div class="bandhead rv">
+        <p class="mark"><span class="mark__n fig">05</span><span class="mark__t">Beyond work</span></p>
+        <h2 class="h2">Cricket, community and <span class="ser">showing up</span></h2>
+      </div>
+
+      <div class="bw rv">
+        <div>
+          <div class="bwpics">
+            <img class="a" src="assets/cricket-team.jpg" alt="Suransh with his cricket team" loading="lazy">
+            <img class="b" src="assets/cricket-selfie.jpg" alt="Suransh in cricket whites with a teammate" loading="lazy">
+          </div>
+          <p class="bwcap">Cricket has been the constant, through school, college and since.</p>
+        </div>
+
+        <div>
+          <div class="bwlist">
+            <div><span>Cricket</span><span>Played the Hansraj Trophy</span></div>
+            <div><span>School</span><span>Innovative and Creative Head Boy</span></div>
+            <div><span>College</span><span>Senior Coordinator, Placement Cell</span></div>
+            <div><span>Society</span><span>Member of Amour, the Commerce Society</span></div>
+          </div>
+
+          <div class="vol">
+            <h3 class="h3">Giving time to the community</h3>
+            <p>I also volunteer with SNCF, taking part in blood donation activities, tree plantation and
+              cleanliness drives.</p>
+            <div class="volstrip">
+              <img src="assets/vol-river.jpg" alt="Volunteers at a river cleanliness drive" loading="lazy">
+              <img src="assets/vol-trees.jpg" alt="Volunteers at a tree plantation programme" loading="lazy">
+              <img src="assets/vol-blood.jpg" alt="A blood donation camp" loading="lazy">
+              <img src="assets/vol-amrit.jpg" alt="Banner at a water cleaning and conservation drive" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 · CONNECT ============ -->
+  <section class="band end" id="connect">
+    <div class="shell end__g">
+      <div class="rv">
+        <p class="mark"><span class="mark__n fig">06</span><span class="mark__t">Connect with me</span></p>
+        <h2 class="h2">Let's talk <span class="ser">business</span>.</h2>
+        <p class="openrole">
+          Open to opportunities in Associate Category Manager, KAM (Marketplaces), and Growth roles.
+        </p>
+        <p class="end__p">
+          If something here is useful to your team, I would be glad to talk.
+        </p>
+        <a class="btn btn--w" href="mailto:1309suranshduggal@gmail.com">Email me</a>
+      </div>
+      <div class="cl rv d1">
+        <a href="mailto:1309suranshduggal@gmail.com">
+          <span><span class="cl__k">Email</span><span class="cl__v">1309suranshduggal@gmail.com</span></span>
+          <span class="cl__i" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/suransh-duggal-4a9497213" target="_blank" rel="noopener">
+          <span><span class="cl__k">LinkedIn</span><span class="cl__v">suransh-duggal-4a9497213</span></span>
+          <span class="cl__i" aria-hidden="true">↗</span>
+        </a>
+        <a href="Suransh-Duggal-CV.pdf" target="_blank" rel="noopener" data-open="cv">
+          <span><span class="cl__k">Résumé</span><span class="cl__v">Open the résumé</span></span>
+          <span class="cl__i" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="shell foot__in">
+    <span>Suransh Duggal, Faridabad, Delhi NCR</span>
+    <span>1309suranshduggal@gmail.com</span>
+  </div>
+</footer>
+
+<!-- ============ PROTEIN PANTRY CASE STUDY ============ -->
+<div class="modal" id="pp" hidden role="dialog" aria-modal="true" aria-labelledby="ppT">
+  <div class="modal__box">
+    <div class="modal__bar">
+      <b id="ppT">Protein Pantry, independent storefront audit</b>
+      <a class="x" href="Protein-Pantry-Teardown.pdf" target="_blank" rel="noopener">Open full PDF</a>
+      <button class="x" id="ppX" type="button">Close</button>
+    </div>
+    <div class="modal__in">
+      <div class="step">
+        <p class="step__k">Observed issue</p>
+        <h4>The same quantity at two different prices</h4>
+        <p>
+          Three single packs selected through the quantity stepper produced <strong>₹480</strong>, while
+          the Pack of 3 option offered the same quantity for <strong>₹420</strong>.
+        </p>
+        <div class="priceline">
+          <div class="pricebox"><b class="fig">₹480</b><span>Three single packs via the stepper</span></div>
+          <div class="pricebox hi"><b class="fig">₹420</b><span>Pack of 3, same quantity</span></div>
+        </div>
+        <p>The audit also documents a category navigation mismatch in how products are grouped and found.</p>
+      </div>
+
+      <div class="step">
+        <p class="step__k">Evidence</p>
+        <h4>Read off the live storefront, 8 to 10 October 2026</h4>
+        <div class="shots">
+          <figure>
+            <img src="assets/evidence-price.jpg" alt="Audit page showing three packs at two prices" loading="lazy">
+            <figcaption>The pricing observation, reproduced in the cart.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/evidence-nav.jpg" alt="Audit page showing the category navigation observation" loading="lazy">
+            <figcaption>The category navigation observation.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="step">
+        <p class="step__k">Business implication</p>
+        <h4>Resolve the pricing inconsistency before testing growth</h4>
+        <p>
+          Two prices for the same quantity give a shopper a reason to hesitate at the moment they are
+          deciding. Correcting it would <strong>reduce</strong> the amount charged on affected orders by
+          ₹60, so it is a correction rather than an uplift.
+        </p>
+        <p>
+          Any conversion benefit from removing that hesitation is a hypothesis and would need testing
+          before anyone claimed it.
+        </p>
+      </div>
+
+      <div class="step">
+        <p class="step__k">Proposed change</p>
+        <h4>Make the pack choice explicit, and keep it</h4>
+        <ul>
+          <li>Make pack selection explicit rather than inferred from a quantity stepper.</li>
+          <li>Preserve the chosen pack and its price all the way through to the cart.</li>
+          <li>Make discovery match shopping intent through clearer product type and need based navigation.</li>
+        </ul>
+        <p style="margin-top:.9rem"><span class="lbl">Proposals, not implemented</span></p>
+      </div>
+
+      <div class="step">
+        <p class="step__k">Validation</p>
+        <h4>How I would check whether it worked</h4>
+        <ul>
+          <li>Check pack selection and cart consistency directly.</li>
+          <li>Test across the products, pack sizes and devices specified in the audit.</li>
+          <li>For the proposed experiments, monitor revenue per product page visitor and pack mix.</li>
+          <li>Use conversion and gross margin per order as guardrails.</li>
+        </ul>
+      </div>
+
+      <div class="caveat">
+        <p class="note" style="margin:0">
+          Independent academic case study. Protein Pantry did not commission this audit and is not a
+          client or employer. The storefront may have changed since the dates above.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ RÉSUMÉ ============ -->
+<div class="modal" id="cv" hidden role="dialog" aria-modal="true" aria-label="Résumé">
+  <div class="modal__box">
+    <div class="modal__bar">
+      <b>Suransh Duggal, résumé</b>
+      <a class="x" href="Suransh-Duggal-CV.pdf" target="_blank" rel="noopener">Open the PDF file</a>
+      <button class="x" id="cvX" type="button">Close</button>
+    </div>
+    <div class="docpage">
+      <img src="assets/cv-page-1.jpg" alt="Résumé of Suransh Duggal, page 1" loading="lazy" width="1240" height="1754">
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var nav = document.querySelector('.nav'),
+      links = [].slice.call(document.querySelectorAll('.nav__a')),
+      secs = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  var tick = false;
+  function frame(){
+    nav.setAttribute('data-stuck', scrollY > 8 ? 'true' : 'false');
+    var y = scrollY + 140, on = 0;
+    for (var i = 0; i < secs.length; i++){ if (secs[i] && secs[i].offsetTop <= y) on = i; }
+    links.forEach(function(a,i){
+      if (i === on) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current');
+    });
+  }
+  addEventListener('scroll', function(){
+    if (tick) return; tick = true;
+    requestAnimationFrame(function(){ frame(); tick = false; });
+  }, {passive:true});
+  frame();
+
+  var burger = document.getElementById('burger'), mob = document.getElementById('mobmenu');
+  function setMenu(open){
+    mob.hidden = !open;
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  burger.addEventListener('click', function(){ setMenu(mob.hidden); });
+  mob.addEventListener('click', function(e){ if (e.target.tagName === 'A') setMenu(false); });
+
+  if (!reduce && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -10% 0px', threshold:.05});
+    [].forEach.call(document.querySelectorAll('.rv:not(.in)'), function(el){ io.observe(el); });
+  } else {
+    [].forEach.call(document.querySelectorAll('.rv'), function(el){ el.classList.add('in'); });
+  }
+
+  /* dialogs */
+  var FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+  var openDialog = null, returnTo = null;
+  function show(el){
+    returnTo = document.activeElement;
+    openDialog = el; el.hidden = false;
+    document.body.classList.add('lock');
+    var btn = el.querySelector('button'); if (btn) btn.focus();
+  }
+  function hide(){
+    if (!openDialog) return;
+    openDialog.hidden = true; openDialog = null;
+    document.body.classList.remove('lock');
+    if (returnTo && returnTo.focus) returnTo.focus();
+  }
+  function trap(e){
+    if (!openDialog || e.key !== 'Tab') return;
+    var f = [].slice.call(openDialog.querySelectorAll(FOCUSABLE)).filter(function(el){ return el.offsetParent !== null; });
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  }
+  var ppModal = document.getElementById('pp'), cvModal = document.getElementById('cv');
+  document.addEventListener('click', function(e){
+    var cvT = e.target.closest('[data-open="cv"]');
+    if (cvT){ e.preventDefault(); show(cvModal); return; }
+    var ppT = e.target.closest('[data-open="pp"]');
+    if (ppT && !e.target.closest('a')){ show(ppModal); }
+  });
+  [].forEach.call(document.querySelectorAll('[data-open="pp"]'), function(c){
+    c.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); show(ppModal); }
+    });
+  });
+  document.getElementById('ppX').addEventListener('click', hide);
+  document.getElementById('cvX').addEventListener('click', hide);
+  [ppModal, cvModal].forEach(function(m){
+    m.addEventListener('click', function(e){ if (e.target === m) hide(); });
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape'){ hide(); return; }
+    trap(e);
+  });
+})();
+</script>
+</body>
+</html>
+
+</body></html>
